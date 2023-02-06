@@ -1,0 +1,54 @@
+[
+    {
+        "car_name": "BMW",
+        "car_year": 1970,
+        "country" : "Germany",
+        "car_model" : [
+            {
+                "model_name" : "X5",
+                "price": 34000, 
+                "isNew": false
+            },
+            {
+                "model_name" : "M8",
+                "price" : 456000,
+                "isNew": true
+            }
+        ]
+    },
+
+    {
+        "car_name": "Mercedes",
+        "car_year": 1960,
+        "country" : "Germany",
+        "car_model" : [
+            {
+                "model_name" : "maybach",
+                "price": 348000, 
+                "isNew": true
+            },
+            {
+                "model_name" : "S class",
+                "price" : 45000,
+                "isNew": false
+            }
+        ]
+    },
+    {
+        "car_name": "Mercedes",
+        "car_year": 1960,
+        "country" : "Germany",
+        "car_model" : [
+            {
+                "model_name" : "maybach-2",
+                "price": 348000, 
+                "isNew": true
+            },
+            {
+                "model_name" : "S class",
+                "price" : 45000,
+                "isNew": false
+            }
+        ]
+    }
+]
