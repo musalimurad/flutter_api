@@ -11,17 +11,16 @@ Car carFromJson(String str) => Car.fromJson(json.decode(str));
 String carToJson(Car data) => json.encode(data.toJson());
 
 class Car {
+  final String carName;
+  final int carYear;
+  final String country;
+  final List<CarModel> carModel;
   Car({
     required this.carName,
     required this.carYear,
     required this.country,
     required this.carModel,
   });
-
-  final String carName;
-  final int carYear;
-  final String country;
-  final List<CarModel> carModel;
 
   factory Car.fromJson(Map<String, dynamic> json) => Car(
         carName: json["car_name"],
