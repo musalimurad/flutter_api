@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_one/screens/api_page.dart';
+import 'package:flutter_api_one/screens/internet_api.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const ApiPage()));
+                  MaterialPageRoute(builder: (context) => const RemoteApi()));
             },
             child: Text('api page'),
           ),

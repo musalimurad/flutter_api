@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_api_one/models/car.dart';
+import 'package:flutter_api_one/models/carModel.dart';
 
 class ApiPage extends StatefulWidget {
   const ApiPage({super.key});
@@ -35,6 +36,11 @@ class _ApiPageState extends State<ApiPage> {
         child: Text('click'),
       ),
       body: FutureBuilder(
+        initialData: [
+          Car(carName: "Scoda", carYear: 2000, country: "Germany", carModel: [
+            CarModel(modelName: "rapid", price: 30000, isNew: true)
+          ])
+        ],
         future: _allCars,
         builder: ((context, snapshot) {
           if (snapshot.hasData) {
